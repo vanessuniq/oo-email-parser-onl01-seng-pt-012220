@@ -13,7 +13,7 @@ class EmailAddressParser
   
   def parse
     email_list = @email_addresses.chomp.split(/[' ',]/)
-    email_list.delete_if {|email| email.}
+    email_list.delete_if {|email| email.empty?}
     
   end
   
